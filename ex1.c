@@ -42,12 +42,12 @@ void Board_Output(void){
 
     printf("  ");
     for( i = 0; i < BOARD_SQUARE; i++ ){
-        printf("%d",i+1);
+        printf("%2d",i+1);
     }
     puts("");
 
     for( i = 0; i < BOARD_SQUARE; i++ ){        
-        printf("%d",i+1);        
+        printf("%2d",i+1);        
         for( j = 0; j < BOARD_SQUARE; j++ ){
             switch( board[j][i] ){
                 case 0:     printf(" "); break;
